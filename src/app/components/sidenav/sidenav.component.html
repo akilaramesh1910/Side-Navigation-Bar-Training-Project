@@ -1,0 +1,47 @@
+<mat-sidenav-container class="app-container">
+    <mat-sidenav #sidenav mode="side" class="app-sidenav" opened="true" (mouseenter)="onSidenavEnter()" 
+    (mouseleave)="onSidenavLeave()" 
+    [ngClass]="{'sidenav-hovered': isSidenavHovered, 'sidenav-not-hovered': !isSidenavHovered}">
+        <mat-nav-list>
+            <div class="sidenav-header">
+                <img src="../assets/logo/Smartruck_hover_logo.svg" alt="">
+            </div>
+            <mat-list-item (mouseenter)="isControlRoomHovered = true" (mouseleave)="isControlRoomHovered = false">
+                <img [src]="isControlRoomHovered ? '../assets/control_room_active_icon.svg' : '../assets/control_room_inactive_icon.svg'" alt="">
+                <span>Control Room</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isDashboardHovered = true" (mouseleave)="isDashboardHovered = false">
+                <img [src]="isDashboardHovered ? '../assets/dashboard_active_icon.svg' : '../assets/dashboard_inactive_icon.svg'" alt="">
+                <span>Dashboard</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isOrdersHovered = true" (mouseleave)="isOrdersHovered = false">
+                <img [src]="isOrdersHovered ? '../assets/orders_active_icon.svg' : '../assets/orders_inactive_icon.svg'" alt="">
+                <span>Orders</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isShipmentsHovered = true" (mouseleave)="isShipmentsHovered = false">
+                <img [src]="isShipmentsHovered ? '../assets/shipments_active_icon.svg' : '../assets/shipments_inactive_icon.svg'" alt="">
+                <span>Shipments</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isLoadHovered = true" (mouseleave)="isLoadHovered = false">
+                <img [src]="isLoadHovered ? '../assets/load_active_icon.svg' : '../assets/load_inactive_icon.svg'" alt="">
+                <span>Load</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isMasterListHovered = true" (mouseleave)="isMasterListHovered = false">
+                <img [src]="isMasterListHovered ? '../assets/masterlist_active_icon.svg' : '../assets/masterlist_inactive_icon.svg'" alt="">
+                <span>Master List</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isReportsHovered = true" (mouseleave)="isReportsHovered = false">
+                <img [src]="isReportsHovered ? '../assets/reports_active_icon.svg' : '../assets/reports_inactive_icon.svg'" alt="">
+                <span>Reports</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isAccountingHovered = true" (mouseleave)="isAccountingHovered = false">
+                <img [src]="isAccountingHovered ? '../assets/account_active_icon.svg' : '../assets/account_inactive_icon.svg'" alt="">
+                <span>Accounting</span>
+            </mat-list-item>
+            <mat-list-item (mouseenter)="isSettingsHovered = true" (mouseleave)="isSettingsHovered = false">
+                <img [src]="isSettingsHovered ? '../assets/settings_active_icon.svg' : '../assets/settings_inactive_icon.svg'" alt="">
+                <span>Settings</span>
+            </mat-list-item>
+        </mat-nav-list>       
+    </mat-sidenav>
+</mat-sidenav-container> 

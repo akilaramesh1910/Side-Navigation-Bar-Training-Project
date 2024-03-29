@@ -1,0 +1,10 @@
+<svg id="masterlist_inactive_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path id="Path_16660" data-name="Path 16660" d="M0,0H24V24H0Z" fill="none"/>
+  <g id="Group_20147" data-name="Group 20147">
+    <rect id="Rectangle_4565" data-name="Rectangle 4565" width="6" height="6" rx="2" transform="translate(3 15)" fill="#fcfcfc" stroke="#fcfcfc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <rect id="Rectangle_4566" data-name="Rectangle 4566" width="6" height="6" rx="2" transform="translate(15 15)" fill="#fcfcfc" stroke="#fcfcfc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <rect id="Rectangle_4567" data-name="Rectangle 4567" width="6" height="6" rx="2" transform="translate(9 3)" fill="#fcfcfc" stroke="#fcfcfc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_16661" data-name="Path 16661" d="M6,15V14a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2v1" fill="none" stroke="#fcfcfc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_1324" data-name="Line 1324" y2="3" transform="translate(12 9)" fill="none" stroke="#fcfcfc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

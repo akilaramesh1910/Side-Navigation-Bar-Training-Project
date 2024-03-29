@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="account_inactive_icon" transform="translate(-23 -507)">
+    <g id="person-fill-check" transform="translate(23 507)">
+      <path id="Path_16677" data-name="Path 16677" d="M14,19.01a5,5,0,1,0-5-5A5,5,0,0,0,14,19.01Zm2.4-6.425L14.5,15.768a1.072,1.072,0,0,1-1.678.206l-1.106-1.106a.715.715,0,1,1,1.011-1.011l.782.782,1.674-2.79a.715.715,0,0,1,1.226.736Z" transform="translate(2.99 2.99)" fill="#fcfcfc"/>
+      <path id="Path_16678" data-name="Path 16678" d="M13.58,6.29A4.29,4.29,0,1,1,9.29,2,4.29,4.29,0,0,1,13.58,6.29Z" transform="translate(1.283)" fill="#fcfcfc"/>
+      <path id="Path_16679" data-name="Path 16679" d="M2,14.72a1.4,1.4,0,0,0,1.43,1.43h7.516a6.444,6.444,0,0,1,1.841-7A15.054,15.054,0,0,0,10.58,9C3.43,9,2,13.29,2,14.72Z" transform="translate(0 2.99)" fill="#fcfcfc"/>
+    </g>
+    <rect id="Rectangle_4574" data-name="Rectangle 4574" width="24" height="24" transform="translate(23 507)" fill="none"/>
+  </g>
+</svg>
