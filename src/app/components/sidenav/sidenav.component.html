@@ -1,11 +1,12 @@
+<!-- <mat-toolbar></mat-toolbar> -->
+
 <mat-sidenav-container class="app-container">
-    <mat-sidenav #sidenav mode="side" class="app-sidenav" opened="true" (mouseenter)="onSidenavEnter()" 
-    (mouseleave)="onSidenavLeave()" 
-    [ngClass]="{'sidenav-hovered': isSidenavHovered, 'sidenav-not-hovered': !isSidenavHovered}">
+    <mat-sidenav #sidenav mode="side" class="app-sidenav" opened="true" (mouseenter)="isLogoHovered = true"
+    (mouseleave)="isLogoHovered = false" >
+        <div class="sidenav-header">
+            <img [src]="isLogoHovered ? '../assets/logo/Smartruck_hover_logo.svg' : '../assets/logo/S_logo.svg'" alt="Logo" />
+        </div>
         <mat-nav-list>
-            <div class="sidenav-header">
-                <img src="../assets/logo/Smartruck_hover_logo.svg" alt="">
-            </div>
             <mat-list-item (mouseenter)="isControlRoomHovered = true" (mouseleave)="isControlRoomHovered = false">
                 <img [src]="isControlRoomHovered ? '../assets/control_room_active_icon.svg' : '../assets/control_room_inactive_icon.svg'" alt="">
                 <span>Control Room</span>
@@ -29,6 +30,7 @@
             <mat-list-item (mouseenter)="isMasterListHovered = true" (mouseleave)="isMasterListHovered = false">
                 <img [src]="isMasterListHovered ? '../assets/masterlist_active_icon.svg' : '../assets/masterlist_inactive_icon.svg'" alt="">
                 <span>Master List</span>
+                <mat-icon *ngIf="isMasterListHovered">arrow_right</mat-icon>
             </mat-list-item>
             <mat-list-item (mouseenter)="isReportsHovered = true" (mouseleave)="isReportsHovered = false">
                 <img [src]="isReportsHovered ? '../assets/reports_active_icon.svg' : '../assets/reports_inactive_icon.svg'" alt="">

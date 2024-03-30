@@ -7,6 +7,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class SidenavComponent {
 isSidenavHovered: any;
+isLogoHovered: any;
 onSidenavLeave() {
 throw new Error('Method not implemented.');
 }
@@ -21,10 +22,11 @@ isAccountingHovered: any;
 isSettingsHovered: any;
 isDashboardHovered: any;
 isReportsHovered: any;
+isControlRoomHovered: any;
+
 onMouseLeave($event: MouseEvent) {
 throw new Error('Method not implemented.');
 }
-isControlRoomHovered: any;
 onMouseEnter($event: MouseEvent) {
 throw new Error('Method not implemented.');
 }

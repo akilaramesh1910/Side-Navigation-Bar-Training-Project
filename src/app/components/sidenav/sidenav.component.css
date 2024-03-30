@@ -1,9 +1,6 @@
 :root {
-
-  /* Colors: */
   --unnamed-color-71747a: #71747A;
-  
-  /* Font/text values */
+
   --unnamed-font-family-inter: Inter;
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-normal: normal;
@@ -11,8 +8,7 @@
   --unnamed-character-spacing-0: 0px;
   --unnamed-line-spacing-26-400001525878906: 26.400001525878906px;
   }
-  
-  /* Character Styles */
+
   .unnamed-character-style-1 {
   font-family: var(--unnamed-font-family-inter);
   font-style: var(--unnamed-font-style-normal);
@@ -21,10 +17,9 @@
   line-height: var(--unnamed-line-spacing-26-400001525878906);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-71747a);
-  }
-
-.app-container{
-  height: 824px;
+}
+mat-sidenav-container{
+  height: 100%;
 }
 mat-sidenav{
   width: 218px;
@@ -33,38 +28,35 @@ mat-sidenav{
   box-shadow: 16px 0px 32px #E9EEF20A;
   opacity: 1;
 }
-
-mat-nav-list{
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+mat-sidenav mat-nav-list{
+  width: 192px;
+  margin-left: 13px;
 }
-mat-nav-list .sidenav-header{
-  padding-left:  30px;
-  justify-content: center;
-  align-items: center;
+mat-sidenav .sidenav-header{
+  padding: 8px 23px;
   width: 105px;
   height: 40px;
   opacity: 1;
-  margin-right: 75px;
   margin-bottom: 10px;
 }
-
-.mat-list-item{
+mat-sidenav mat-nav-list .mat-list-item{
+  display: flex;
+  align-items: start;
+  justify-content: start;
   width: 192px;
   height: 42px;
   border-radius: 4px;
   opacity: 1;
-  margin-left: 13px;
+  margin-top: 12px;
 }
-.mat-list-item img{
-  margin-right: 16px;
+mat-sidenav mat-nav-list .mat-list-item img{
   width: 24px;
   height: 24px;
   opacity: 1;
-  /* background-color: yellow; */
+  position: relative;
+  right: 6px !important;
 }
-.mat-list-item span{
+mat-sidenav mat-nav-list .mat-list-item span{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/26.4px var(--unnamed-font-family-inter);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
@@ -73,22 +65,33 @@ mat-nav-list .sidenav-header{
   color: #FCFCFC;
   text-transform: capitalize;
   opacity: 1;
+  width: 90px;
+  margin-left: 9px;
 }
-.mat-list-item:hover{
+mat-sidenav mat-nav-list mat-icon{
+  position: absolute;
+  left: 165px;
+  opacity: 1;
+}
+mat-sidenav mat-nav-list .mat-list-item:hover{
+  display: flex;
+  align-items: start;
+  justify-content: start;
   width: 192px;
-  height: 39px;
+  height: 42px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 4px;
   opacity: 1;
-  margin-left: 13px;
 }
-.mat-list-item:hover img{
-  margin-right: 13px;
+mat-sidenav  mat-nav-list .mat-list-item:hover img{
   width: 24px;
   height: 24px;
   opacity: 1;
+  padding: 0px;
+  position: relative;
+  right: 8px;
 }
-.mat-list-item:hover span{
+mat-sidenav mat-nav-list .mat-list-item:hover span{
   font: var(--unnamed-font-style-normal) normal 600 13px/26.4px var(--unnamed-font-family-inter);
   letter-spacing: var(--unnamed-character-spacing-0);
   text-align: left;
@@ -97,14 +100,54 @@ mat-nav-list .sidenav-header{
   color: #07004D;
   text-transform: capitalize;
   opacity: 1;
-}
-/* .sidenav-not-hovered {
+  width: 90px;
+}  
+/* Not-Hover */
+mat-sidenav:not(:hover){
   width: 70px;
   height: 824px;
   background: #20104D 0% 0% no-repeat padding-box;
   box-shadow: 16px 0px 32px #E9EEF20A;
   opacity: 1;
 }
-.sidenav-not-hovered .sidenav-header img{
-  display:none;
-} */
+mat-sidenav:not(:hover) mat-nav-list .mat-list-item img{
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  position: relative;
+  left: 0px; 
+}
+
+mat-sidenav:not(:hover) mat-nav-list{
+  width: 42px;
+  margin-left: 14px;
+}
+
+mat-sidenav:not(:hover) mat-nav-list mat-list-item{
+  width: 42px;
+  height: 42px;
+}
+mat-sidenav:not(:hover) mat-nav-list .mat-list-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  opacity: 1;
+  margin-top: 12px;
+}
+mat-sidenav:not(:hover) mat-nav-list .mat-list-item img:hover{
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+}
+.mat-list-base .mat-list-item .mat-list-icon,mat-sidenav:not(:hover) mat-nav-list .mat-list-item span{
+  display: none;
+}
+mat-sidenav:not(:hover) .sidenav-header{
+  padding: 8px 23px;
+  width: 105px;
+  height: 40px;
+  opacity: 1;
+}
