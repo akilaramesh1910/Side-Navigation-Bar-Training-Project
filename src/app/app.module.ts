@@ -59,7 +59,7 @@ import { OrdersComponent } from './components/orders/orders.component'
     MatTooltipModule,
     RouterModule.forRoot([])
   ],
-  providers: [],
+  providers: [],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
