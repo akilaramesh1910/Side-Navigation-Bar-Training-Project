@@ -26,7 +26,6 @@ import { MasterListComponent } from './components/master-list/master-list.compon
 import { ReportsComponent } from './components/reports/reports.component';
 import { AccountingComponent } from './components/accounting/accounting.component';
 import { ControlRoomComponent } from './components/control-room/control-room.component';
-import { BodyComponent } from './components/body/body.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component'
 
@@ -42,7 +41,6 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component'
     ReportsComponent,
     AccountingComponent,
     ControlRoomComponent,
-    BodyComponent,
     OrdersComponent,
     ToolbarComponent
   ],
