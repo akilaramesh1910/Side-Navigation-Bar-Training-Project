@@ -6,13 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule, Routes }   from '@angular/router';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
@@ -25,7 +27,8 @@ import { ReportsComponent } from './components/reports/reports.component';
 import { AccountingComponent } from './components/accounting/accounting.component';
 import { ControlRoomComponent } from './components/control-room/control-room.component';
 import { BodyComponent } from './components/body/body.component';
-import { OrdersComponent } from './components/orders/orders.component'
+import { OrdersComponent } from './components/orders/orders.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component'
 
 @NgModule({
   declarations: [
@@ -40,17 +43,20 @@ import { OrdersComponent } from './components/orders/orders.component'
     AccountingComponent,
     ControlRoomComponent,
     BodyComponent,
-    OrdersComponent
+    OrdersComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatToolbarModule,
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule,
     MatSidenavModule,
+    MatSelectModule,
+    MatFormFieldModule,
     MatMenuModule,
-    MatToolbarModule,
     MatIconModule,
     HttpClientModule,
     MatListModule,

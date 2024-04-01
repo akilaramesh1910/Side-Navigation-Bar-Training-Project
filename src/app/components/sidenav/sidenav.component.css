@@ -1,24 +1,5 @@
-:root {
-  --unnamed-color-71747a: #71747A;
-
-  --unnamed-font-family-inter: Inter;
-  --unnamed-font-style-normal: normal;
-  --unnamed-font-weight-normal: normal;
-  --unnamed-font-size-14: 14px;
-  --unnamed-character-spacing-0: 0px;
-  --unnamed-line-spacing-26-400001525878906: 26.400001525878906px;
-  }
-
-  .unnamed-character-style-1 {
-  font-family: var(--unnamed-font-family-inter);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
-  font-size: var(--unnamed-font-size-14);
-  line-height: var(--unnamed-line-spacing-26-400001525878906);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-71747a);
-}
 mat-sidenav-container{
+  width: 410px;
   height: 100%;
 }
 mat-sidenav{
@@ -27,6 +8,7 @@ mat-sidenav{
   background: #20104D 0% 0% no-repeat padding-box;
   box-shadow: 16px 0px 32px #E9EEF20A;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 mat-sidenav mat-nav-list{
   width: 192px;
@@ -37,7 +19,7 @@ mat-sidenav .sidenav-header{
   width: 105px;
   height: 40px;
   opacity: 1;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 mat-sidenav mat-nav-list .mat-list-item{
   display: flex;
@@ -57,10 +39,10 @@ mat-sidenav mat-nav-list .mat-list-item img{
   right: 6px !important;
 }
 mat-sidenav mat-nav-list .mat-list-item span{
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/26.4px var(--unnamed-font-family-inter);
-  letter-spacing: var(--unnamed-character-spacing-0);
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
   text-align: left;
-  font: normal normal normal 13px/26px Inter;
   letter-spacing: 0px;
   color: #FCFCFC;
   text-transform: capitalize;
@@ -92,10 +74,8 @@ mat-sidenav  mat-nav-list .mat-list-item:hover img{
   right: 8px;
 }
 mat-sidenav mat-nav-list .mat-list-item:hover span{
-  font: var(--unnamed-font-style-normal) normal 600 13px/26.4px var(--unnamed-font-family-inter);
-  letter-spacing: var(--unnamed-character-spacing-0);
+  font-weight: 700;
   text-align: left;
-  font: normal normal 600 13px/26px Inter;
   letter-spacing: 0px;
   color: #07004D;
   text-transform: capitalize;

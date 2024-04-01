@@ -1,0 +1,9 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+app-toolbar{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
