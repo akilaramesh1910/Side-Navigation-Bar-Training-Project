@@ -29,6 +29,40 @@
                 <img [src]="isMasterListHovered ? '../assets/masterlist_active_icon.svg' : '../assets/masterlist_inactive_icon.svg'" alt="">
                 <span>Master List</span>
                 <mat-icon *ngIf="isMasterListHovered">arrow_right</mat-icon>
+                <div class="options" *ngIf="isMasterListHovered">
+                    <mat-nav-list>
+                        <mat-list-item>
+                            <span>Vehicle Overview</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>User Management</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Unit Management</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Divisions</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Vehicles</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Drivers</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Location Master List</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Pincode Master List</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Partial Reg. Dashboard</span>
+                        </mat-list-item>
+                        <mat-list-item>
+                            <span>Carriers</span>
+                        </mat-list-item>
+                    </mat-nav-list>
+                </div>
             </mat-list-item>
             <mat-list-item (mouseenter)="isReportsHovered = true" (mouseleave)="isReportsHovered = false">
                 <img [src]="isReportsHovered ? '../assets/reports_active_icon.svg' : '../assets/reports_inactive_icon.svg'" alt="">

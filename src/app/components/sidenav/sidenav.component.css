@@ -1,5 +1,4 @@
 mat-sidenav-container{
-  width: 410px;
   height: 100%;
 }
 mat-sidenav{
@@ -21,7 +20,7 @@ mat-sidenav .sidenav-header{
   opacity: 1;
   margin-bottom: 0px;
 }
-mat-sidenav mat-nav-list .mat-list-item{
+mat-sidenav mat-nav-list .mat-list-item,mat-sidenav .options mat-nav-list .mat-list-item{
   display: flex;
   align-items: start;
   justify-content: start;
@@ -38,7 +37,8 @@ mat-sidenav mat-nav-list .mat-list-item img{
   position: relative;
   right: 6px !important;
 }
-mat-sidenav mat-nav-list .mat-list-item span{
+
+mat-sidenav mat-nav-list .mat-list-item span,mat-sidenav .options mat-nav-list .mat-list-item span{
   font-size: 13px;
   font-weight: 400;
   display: block;
@@ -55,7 +55,7 @@ mat-sidenav mat-nav-list mat-icon{
   left: 165px;
   opacity: 1;
 }
-mat-sidenav mat-nav-list .mat-list-item:hover{
+mat-sidenav mat-nav-list .mat-list-item:hover,mat-sidenav .options mat-nav-list .mat-list-item:hover{
   display: flex;
   align-items: start;
   justify-content: start;
@@ -73,7 +73,7 @@ mat-sidenav  mat-nav-list .mat-list-item:hover img{
   position: relative;
   right: 8px;
 }
-mat-sidenav mat-nav-list .mat-list-item:hover span{
+mat-sidenav mat-nav-list .mat-list-item:hover span,mat-sidenav .options mat-nav-list .mat-list-item:hover span{
   font-weight: 700;
   text-align: left;
   letter-spacing: 0px;
@@ -130,4 +130,42 @@ mat-sidenav:not(:hover) .sidenav-header{
   width: 105px;
   height: 40px;
   opacity: 1;
+}
+mat-sidenav .options{
+  position: fixed;
+  left: 205px;
+  width: 192px;
+  top: 300px;
+  height: 510px;
+  border-radius: 6px;
+  background: #20104D 0% 0% no-repeat padding-box;
+  box-shadow: 16px 0px 32px white;
+}
+mat-sidenav .options mat-nav-list{
+  margin: 8px;
+  width: 176px;
+}
+mat-sidenav .options mat-nav-list .mat-list-item{
+  width: 176px;
+  height: 42px;
+  margin-right: 8px;
+}
+mat-sidenav .options mat-nav-list .mat-list-item span{
+  width: 146px;
+  margin-left: -8px;
+  height: 16px;
+}
+mat-sidenav .options mat-nav-list .mat-list-item:nth-child(1){
+  margin-top: -8px;
+}
+mat-sidenav .options mat-nav-list .mat-list-item:hover span{
+  width: 146px;
+  margin-left: -8px;
+  height: 16px;
+}
+mat-sidenav .options mat-nav-list .mat-list-item:hover{
+  width: 176px;
+}
+mat-sidenav .options mat-nav-list .mat-list-item{
+  margin-bottom: -8px;
 }
